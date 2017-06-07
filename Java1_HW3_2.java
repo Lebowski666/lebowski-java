@@ -16,7 +16,7 @@ public class HW3_2 {
         //System.out.println(Arrays.toString(words));
         int n = rnd.nextInt(words.length);
         //System.out.println(words[n]);
-        System.out.println("Программа загадала слово, попробуйте угадать");
+        System.out.println("РџСЂРѕРіСЂР°РјРјР° Р·Р°РіР°РґР°Р»Р° СЃР»РѕРІРѕ, РїРѕРїСЂРѕР±СѓР№С‚Рµ СѓРіР°РґР°С‚СЊ");
         char[] chs = words[n].toCharArray();
         char[] chCmp = new char[chs.length];
         for (int i = 0; i < chs.length; i++) {
@@ -24,16 +24,16 @@ public class HW3_2 {
         }
  
         while (true) {
-            System.out.print("Введите слово (Нажмите 0 для выхода): ");
+            System.out.print("Р’РІРµРґРёС‚Рµ СЃР»РѕРІРѕ (РќР°Р¶РјРёС‚Рµ 0 РґР»СЏ РІС‹С…РѕРґР°): ");
             word = sc.nextLine();
             if (word.equals("0")) {
                 break;
             }
             if (word.equals(words[n])) {
-                System.out.println("Вы угадали");
+                System.out.println("Р’С‹ СѓРіР°РґР°Р»Рё");
                 break;
             } else {
-                System.out.println("Вы не угадали");
+                System.out.println("Р’С‹ РЅРµ СѓРіР°РґР°Р»Рё");
                 char[] chWord = word.toCharArray();
  
                 for (int i = 0; i < chs.length; i++) {
