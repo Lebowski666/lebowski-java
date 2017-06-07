@@ -6,16 +6,16 @@
 public class HW7 {
 
     public static void main(String[] args) {
-        Cats[] cats = {new Cat1("Barsik", 11, false), new Cat2("Murzik",8, false)}; //создаем массив котов
+        Cats[] cats = {new Cat1("Barsik", 11, false), new Cat2("Murzik",8, false)}; //СЃРѕР·РґР°РµРј РјР°СЃСЃРёРІ РєРѕС‚РѕРІ
         // Cat cat = new Cat("Barsik", 41);
-        Plate plate = new Plate(17); //создаем тарелку
+        Plate plate = new Plate(17); //СЃРѕР·РґР°РµРј С‚Р°СЂРµР»РєСѓ
         for (Cats c : cats) {
             System.out.println(plate);
             c.eat(plate);
             System.out.println(c);
 
         }
-        System.out.println("Добавим в тарелку еды");
+        System.out.println("Р”РѕР±Р°РІРёРј РІ С‚Р°СЂРµР»РєСѓ РµРґС‹");
         plate.increaseFood(10);
         System.out.println(plate);
 
@@ -33,11 +33,11 @@ class Cats {
     }
     void eat(Plate plate) {
         //plate.decreaseFood(appetite);
-        if (appetite <= plate.getFood()) { //получаем значение true или false для сытости кота
+        if (appetite <= plate.getFood()) { //РїРѕР»СѓС‡Р°РµРј Р·РЅР°С‡РµРЅРёРµ true РёР»Рё false РґР»СЏ СЃС‹С‚РѕСЃС‚Рё РєРѕС‚Р°
             this.satiety = plate.isHungry(appetite);
         }
         else {
-            System.out.println("Похоже что кто-то останется голодным");
+            System.out.println("РџРѕС…РѕР¶Рµ С‡С‚Рѕ РєС‚Рѕ-С‚Рѕ РѕСЃС‚Р°РЅРµС‚СЃСЏ РіРѕР»РѕРґРЅС‹Рј");
         }
     }
 }
@@ -47,7 +47,7 @@ class Cat1 extends Cats{
     }
     @Override
     public String toString() {
-        return "Имя кота -  " + name + "; аппетит кота - " + appetite + "; сытость - " + satiety; //выводим данные про первого кота в консоль
+        return "РРјСЏ РєРѕС‚Р° -  " + name + "; Р°РїРїРµС‚РёС‚ РєРѕС‚Р° - " + appetite + "; СЃС‹С‚РѕСЃС‚СЊ - " + satiety; //РІС‹РІРѕРґРёРј РґР°РЅРЅС‹Рµ РїСЂРѕ РїРµСЂРІРѕРіРѕ РєРѕС‚Р° РІ РєРѕРЅСЃРѕР»СЊ
     }
 }
 
@@ -57,7 +57,7 @@ class Cat2 extends Cats{
     }
     @Override
     public String toString() {
-        return "Имя кота -  " + name + "; аппетит кота - " + appetite + "; сытость - " + satiety; //выводим данные про второго кота в консоль
+        return "РРјСЏ РєРѕС‚Р° -  " + name + "; Р°РїРїРµС‚РёС‚ РєРѕС‚Р° - " + appetite + "; СЃС‹С‚РѕСЃС‚СЊ - " + satiety; //РІС‹РІРѕРґРёРј РґР°РЅРЅС‹Рµ РїСЂРѕ РІС‚РѕСЂРѕРіРѕ РєРѕС‚Р° РІ РєРѕРЅСЃРѕР»СЊ
     }
 }
 
@@ -67,20 +67,20 @@ class Plate {
         this.food = food;
     }
 
-    int getFood() { //получаем количество еды чтобы потом сравнить с аппетитом кота
+    int getFood() { //РїРѕР»СѓС‡Р°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ РµРґС‹ С‡С‚РѕР±С‹ РїРѕС‚РѕРј СЃСЂР°РІРЅРёС‚СЊ СЃ Р°РїРїРµС‚РёС‚РѕРј РєРѕС‚Р°
         return food;
     }
 
     void decreaseFood(int food) {
-        if ((this.food - food >= 0)) { //проверяем что в миске не отрицательное кол-во еды
+        if ((this.food - food >= 0)) { //РїСЂРѕРІРµСЂСЏРµРј С‡С‚Рѕ РІ РјРёСЃРєРµ РЅРµ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ РєРѕР»-РІРѕ РµРґС‹
             this.food -= food;
         }
     }
-    void increaseFood(int f) { //добавляем еду в тарелку
+    void increaseFood(int f) { //РґРѕР±Р°РІР»СЏРµРј РµРґСѓ РІ С‚Р°СЂРµР»РєСѓ
         this.food += f;
     }
 
-    boolean isHungry(int n) { //метод определяющий сытость кота
+    boolean isHungry(int n) { //РјРµС‚РѕРґ РѕРїСЂРµРґРµР»СЏСЋС‰РёР№ СЃС‹С‚РѕСЃС‚СЊ РєРѕС‚Р°
         if (this.food < n) {
             return false;
         }
@@ -93,6 +93,6 @@ class Plate {
 
     @Override
     public String toString() {
-        return "plate: " + food; //выводим содержимое тарелки в консоль
+        return "plate: " + food; //РІС‹РІРѕРґРёРј СЃРѕРґРµСЂР¶РёРјРѕРµ С‚Р°СЂРµР»РєРё РІ РєРѕРЅСЃРѕР»СЊ
     }
 }
