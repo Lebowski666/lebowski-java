@@ -7,11 +7,11 @@
 public class Homework5 {
 	public static void main(String[] args) {
 		Sotrudnik[] persArray = new Sotrudnik[5];
-		persArray[0] = new Sotrudnik("Èâàíîâ Èâàí", "Èíæåíåð", "ivivan@mailbox.com", "66-44-66", 30000, 30); 
-		persArray[1] = new Sotrudnik("Ïåòðîâ Ïåòð", "Ãðóç÷èê", "pepetrov@mailbox.com", "66-44-67", 15000, 45);
-		persArray[2] = new Sotrudnik("Ñèäîðîâ Ìèõàèë", "Çàì. äèðåêòîðà", "sidmihail@mailbox.com", "66-44-68", 55000, 41);
-		persArray[3] = new Sotrudnik("Êîçëîâà Àííà", "Áóõãàëòåð", "annakozlova@mailbox.com", "70-70-75", 25000, 35);
-		persArray[4] = new Sotrudnik("Èâàíîâà Íàòàëüÿ", "Ãëàâíûé áóõãàëòåð", "inatalya@mailbox.com", "71-80-85", 45000, 53);
+		persArray[0] = new Sotrudnik("Ð˜Ð²Ð°Ð½Ð¾Ð² Ð˜Ð²Ð°Ð½", "Ð˜Ð½Ð¶ÐµÐ½ÐµÑ€", "ivivan@mailbox.com", "66-44-66", 30000, 30); 
+		persArray[1] = new Sotrudnik("ÐŸÐµÑ‚Ñ€Ð¾Ð² ÐŸÐµÑ‚Ñ€", "Ð“Ñ€ÑƒÐ·Ñ‡Ð¸Ðº", "pepetrov@mailbox.com", "66-44-67", 15000, 45);
+		persArray[2] = new Sotrudnik("Ð¡Ð¸Ð´Ð¾Ñ€Ð¾Ð² ÐœÐ¸Ñ…Ð°Ð¸Ð»", "Ð—Ð°Ð¼. Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð°", "sidmihail@mailbox.com", "66-44-68", 55000, 41);
+		persArray[3] = new Sotrudnik("ÐšÐ¾Ð·Ð»Ð¾Ð²Ð° ÐÐ½Ð½Ð°", "Ð‘ÑƒÑ…Ð³Ð°Ð»Ñ‚ÐµÑ€", "annakozlova@mailbox.com", "70-70-75", 25000, 35);
+		persArray[4] = new Sotrudnik("Ð˜Ð²Ð°Ð½Ð¾Ð²Ð° ÐÐ°Ñ‚Ð°Ð»ÑŒÑ", "Ð“Ð»Ð°Ð²Ð½Ñ‹Ð¹ Ð±ÑƒÑ…Ð³Ð°Ð»Ñ‚ÐµÑ€", "inatalya@mailbox.com", "71-80-85", 45000, 53);
 		//System.out.println(Arrays.toString(persArray));
 		for (Sotrudnik sotr : persArray)
 			if (sotr.getAge() > 40)
