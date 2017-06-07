@@ -2,12 +2,12 @@ class Zadanie7
 {
 	public static void main (String[] args)
 	{
-		String name = "Сергей";
+		String name = "РЎРµСЂРіРµР№";
 		printName(name);
 	}
 	public static void printName (String name)
 	{
 		
-		System.out.println("Привет, " + name);
+		System.out.println("РџСЂРёРІРµС‚, " + name);
 	}
 }
