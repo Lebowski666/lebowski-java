@@ -39,7 +39,7 @@ class Cat extends Animal {
         super(run, jump, swim);
        
     }
-	@Override //переопределяем метод swim, потому что по условию кот не плавает.
+	@Override //РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµРј РјРµС‚РѕРґ swim, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РїРѕ СѓСЃР»РѕРІРёСЋ РєРѕС‚ РЅРµ РїР»Р°РІР°РµС‚.
     boolean swim(int length) {
         return false;
     }
