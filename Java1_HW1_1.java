@@ -2,22 +2,22 @@ class Zadanie2
 {
 	public static void main (String[] args)
 	{
-		char bukva = 'М';
-		String stroka = "Второе задание";
+		char bukva = 'Рњ';
+		String stroka = "Р’С‚РѕСЂРѕРµ Р·Р°РґР°РЅРёРµ";
 		int number = 365;
 		short a = 16;
 		long b = 64;
 		double g = 1;
 		float temp = 36.6f;
 		boolean result = true;
-		System.out.println("Буква " + bukva);
-		System.out.println("Название " + stroka);
-		System.out.println("Количество дней " + number);
+		System.out.println("Р‘СѓРєРІР° " + bukva);
+		System.out.println("РќР°Р·РІР°РЅРёРµ " + stroka);
+		System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ РґРЅРµР№ " + number);
 		System.out.println("a = " + a);
 		System.out.println("b = " + b);
 		System.out.println("g = " + g);
-		System.out.println("Температура " + temp);
-		System.out.println("Ответ " + result);
+		System.out.println("РўРµРјРїРµСЂР°С‚СѓСЂР° " + temp);
+		System.out.println("РћС‚РІРµС‚ " + result);
 	}
 
 }
