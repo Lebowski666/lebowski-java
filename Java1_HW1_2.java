@@ -2,7 +2,7 @@ class Zadanie3
 {
 	public static void main (String[] args)
 	{
-		System.out.println("Результат равен: " + result(5,10,50,25));
+		System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ СЂР°РІРµРЅ: " + result(5,10,50,25));
 	}
 	static int result (int a, int b, int c, int d)
 	{
