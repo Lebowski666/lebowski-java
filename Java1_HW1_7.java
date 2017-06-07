@@ -3,7 +3,7 @@ class Zadanie8
 	public static void main (String[] args)
 	{
 		int year = 2017;
-		System.out.println("Год " + year + " високосный? " + checkYear(year));
+		System.out.println("Р“РѕРґ " + year + " РІРёСЃРѕРєРѕСЃРЅС‹Р№? " + checkYear(year));
 	}
 	public static boolean checkYear(int year)
 	{
