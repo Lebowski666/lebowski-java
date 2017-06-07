@@ -4,9 +4,9 @@ class Zadanie5
 	{
 		int a = 7;
 		if (!chisloPolozOrOtric(a))
-			System.out.println("число " + a + " положительное");
+			System.out.println("С‡РёСЃР»Рѕ " + a + " РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ");
 		else
-			System.out.println("число " + a + " отрицательное");
+			System.out.println("С‡РёСЃР»Рѕ " + a + " РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ");
 	
 	}
 	static boolean chisloPolozOrOtric(int a)
