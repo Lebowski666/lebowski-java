@@ -2,7 +2,7 @@ class Zadanie4
 {
 	public static void main (String[] args)
 	{
-		System.out.println("Результат равен " + sravnenie(10, 7));
+		System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ СЂР°РІРµРЅ " + sravnenie(10, 7));
 	}
 	public static boolean sravnenie(int a, int b)
 	{
