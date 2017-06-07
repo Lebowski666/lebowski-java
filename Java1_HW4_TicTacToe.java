@@ -11,8 +11,8 @@ class TicTacToe {
 	
 	final int SIZE = 3; //размер поля
 	final char DOT_X = 'x'; //игрок
-	final char DOT_O = 'o'; //ИИ
-	final char DOT_EMPTY = '.'; //пустая ячейка
+	final char DOT_O = 'o'; //€€
+	final char DOT_EMPTY = '.'; //пустаЯ Ячейка
 	char[][] map = new char[SIZE][SIZE];
 	Scanner sc = new Scanner(System.in);
 	Random rand = new Random();
@@ -66,7 +66,7 @@ class TicTacToe {
 		map[y][x] = DOT_X;
 	}
 	
-	void aiTurn() { //ход ИИ
+	void aiTurn() { //ход €€
 		int x, y;
 		do {
 			x = rand.nextInt(SIZE);
