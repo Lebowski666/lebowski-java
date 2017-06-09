@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Course
+comment1.params=p
+comment1.target=Course(obstances.Pass[])
+comment2.params=t
+comment2.target=void\ doIt(Team)
+numComments=3
